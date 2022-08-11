@@ -144,3 +144,26 @@ h1 {
 h4 {
     margin: 1rem 0;
 }
+
+/* control */
+.control {
+    margin: 3rem auto 0 auto;
+    width: 800px;
+    text-align: center;
+    font-size: 14px;
+    color: #AEAEB7;
+}
+
+.control button {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    border-radius: 100%;
+    border: 2px solid #AEAEB7;
+}
+
+button img {
+    width: 80%;
+    height: 80%;
+    margin-top: 0.3rem;
+}
