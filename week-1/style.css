@@ -117,14 +117,9 @@ h1 {
     color: white;
 }
 
-/* latest news */
 .latest-news {
     width: 800px;
-    margin: 2rem auto;
-}
-
-.latest-news h4 {
-    margin: 1rem 0;
+    margin: 1rem auto;
 }
 
 .news-container {
@@ -134,19 +129,18 @@ h1 {
 
 .news {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-
-    height: 10rem;
-    width: 10rem;
 }
 
 .news img {
+    width: 100%;
     border-radius: 1rem;
 }
 
 .news p {
-    padding: 0.5rem 0;
     font-size: 14px;
     font-weight: lighter;
+}
+
+h4 {
+    margin: 1rem 0;
 }
