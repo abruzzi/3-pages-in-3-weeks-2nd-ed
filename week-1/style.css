@@ -6,22 +6,25 @@
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    background-color: #E9EBF2;
 }
 
 li {
     list-style: none;
 }
 
+/* navigation */
+
 nav {
     width: 800px;
     margin: 0 auto;
-    background-color: beige;
+    /* background-color: beige; */
 }
 
 .nav-list {
     display: flex;
     align-items: center;
-    padding: 8px 16px;
+    padding: 16px 0;
 }
 
 .list-item:last-child {
@@ -52,4 +55,62 @@ nav {
 
 .highlight {
     color: blue;
+}
+
+/* hero */
+
+.hero-section {
+    width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section > section {
+    flex: 1;
+}
+
+.game-cover {
+    width: 400px;
+    height: 260px;
+    background-image: url('./assets/hero.jpg');
+    background-position: center;
+    background-size:cover;
+    margin: 16px auto;
+    border-radius: 32px;
+
+    position: relative;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.media .title {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.media span.rating {
+    margin-left: 8px;
+}
+
+.brief p {
+    font-weight: lighter;
+    margin: 16px 0;
+}
+
+.button-secondary {
+    appearance: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: none;
+    background-color: blue;
+    color: white;
 }
