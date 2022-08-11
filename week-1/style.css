@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -114,4 +115,38 @@ h1 {
     border: none;
     background-color: blue;
     color: white;
+}
+
+/* latest news */
+.latest-news {
+    width: 800px;
+    margin: 2rem auto;
+}
+
+.latest-news h4 {
+    margin: 1rem 0;
+}
+
+.news-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.news {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    height: 10rem;
+    width: 10rem;
+}
+
+.news img {
+    border-radius: 1rem;
+}
+
+.news p {
+    padding: 0.5rem 0;
+    font-size: 14px;
+    font-weight: lighter;
 }
