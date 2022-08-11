@@ -73,13 +73,14 @@ nav {
 .game-cover {
     width: 400px;
     height: 260px;
-    background-image: url('./assets/hero.jpg');
-    background-position: center;
-    background-size:cover;
-    margin: 16px auto;
-    border-radius: 32px;
-
+    border-radius: 1rem;
     position: relative;
+    overflow: hidden;
+}
+
+.game-cover img {
+    position: absolute;
+    width: 100%;
 }
 
 h1 {
