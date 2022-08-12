@@ -11,103 +11,736 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">  
 
+  <link rel="stylesheet" href="style.css">
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
+    .basic-info {
+      padding: 0 1rem;
     }
 
-    :root {
-      --card-width: 240px;
-      --row-increment: 16px;      
+    .menu {
+      margin-left: auto;
+      width: 1.2rem;
+      height: 1.2rem;
     }
 
-    body {
-      font-size: 16px;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    .main {
-      width: 80vw;
-      margin: 1rem auto;
-    }
-
-    .cards-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, var(--card-width));
-      grid-auto-rows: var(--row-increment);
-      justify-content: center;
-    }
-
-    .card {
-      margin: 8px;
-      padding: 1rem;
-      background-color: beige;
-    }
-
-    .small {
-      background-color: bisque;
-      grid-row-end: span 10;
-    }
-
-    .medium {
-      background-color: burlywood;
-      grid-row-end: span 16;
-    }
-
-    .large {
-      background-color: blanchedalmond;
-      grid-row-end: span 20;
-    }
-
-    .flex{
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    .avatar {
-      width: 2rem;
-      height: 2rem;
-    }
-
-    .avatar img {
+    .menu img {
       width: 100%;
-      border-radius: 100%;
-      border: 1px solid orangered;
     }
 
-    .flex p {
+    .media {
+      width: 100%;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+    }
+
+    .media img {
+      width: 100%;
+    }
+
+    .controls {
+      padding: 0 1rem;
+    }
+
+    .control {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .control img {
+      width: 100%;
+    }
+
+    .control:last-child {
+      margin-left: auto;
+    }
+
+    .liked {
+      padding: 0.5rem 1rem;
       font-size: 12px;
+      color: gray;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    .comments {
+      padding: 0 1rem;
+      font-size: 12px;
+    }
+
+    .date {
+      color: lightgray;
+      font-size: 10px;
+    }
+
+
+    .small .media {
+      max-height: 134px;
+      overflow: hidden;
+    }
+
+    .medium .media {
+      max-height: 172px;
+      overflow: hidden;
+    }
+
+    .large .media {
+      max-height: 234px;
+      overflow: hidden;
     }
   </style>
 </head>
 
 <body>
-  <div class="main">
-    <div class="cards-container">
-      <div class="card small">
-        <div class="flex">
-          <div class="avatar"><img src="assets/juntao.avatar.png" alt="juntao avatar"></div>
-          <div class="brief">
-            <h4>Juntao Qiu</h4>
-            <p>Developer / Designer</p>
-          </div>
+  <div class="main cards-container">
+    <div class="card small">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
         </div>
       </div>
-      <div class="card medium"></div>
-      <div class="card large"></div>
-      <div class="card medium"></div>
-      <div class="card small"></div>
-      <div class="card medium"></div>
-      <div class="card large"></div>
-      <div class="card medium"></div>
-      <div class="card large"></div>
-      <div class="card medium"></div>
-      <div class="card small"></div>
-      <div class="card medium"></div>
+
+      <section class="media">
+        <img src="assets/boats.JPG" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card large">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/large.jpg" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card medium">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/medium.jpg" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card small">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/light-trace.JPG" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card medium">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/medium.JPG" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card small">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/light-trace.JPG" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card large">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/large.jpg" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card small">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/boats.JPG" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card large">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/large.jpg" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card medium">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/medium.jpg" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card small">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/light-trace.JPG" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card medium">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/medium.JPG" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card small">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/light-trace.JPG" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
+    </div>
+
+    <div class="card large">
+      <div class="flex basic-info">
+        <div class="avatar">
+          <img src="assets/juntao.avatar.png" alt="avatar">
+        </div>
+        <div class="brief">
+          <h4>Juntao Qiu</h4>
+          <p>Web developer</p>
+        </div>
+        <div class="menu">
+          <img src="assets/menu.png" alt="menu">
+        </div>
+      </div>
+
+      <section class="media">
+        <img src="assets/large.jpg" alt="boats in Brighton pier">
+      </section>
+
+      <div class="flex controls">
+        <div class="control">
+          <img src="assets/heart.png" alt="favorite">
+        </div>
+        
+        <div class="control">
+          <img src="assets/speech.png" alt="comment">
+        </div>
+        
+        <div class="control">
+          <img src="assets/sent.png" alt="share">
+        </div>
+        
+        <div class="control">
+          <img src="assets/bookmark.png" alt="save">
+        </div>
+      </div>
+
+      <div class="liked">
+        <p>Liked by Lucy <span class="highlight">and 152 others</span></p>
+      </div>
+
+      <div class="comments">
+        <p>Boats in Brighton Beach with beautiful sunsetting</p>
+        <p class="date">Today date</p>
+      </div>
     </div>
   </div>
+  
+  <a target="_blank" href="https://icons8.com/icon/2837/sent">Sent</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 </body>
 
