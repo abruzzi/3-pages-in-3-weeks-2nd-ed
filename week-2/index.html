@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">  
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --card-width: 240px;
+      --row-increment: 16px;      
+    }
+
+    body {
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .main {
+      width: 80vw;
+      margin: 1rem auto;
+    }
+
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, var(--card-width));
+      grid-auto-rows: var(--row-increment);
+      justify-content: center;
+    }
+
+    .card {
+      margin: 8px;
+      padding: 1rem;
+      background-color: beige;
+    }
+
+    .small {
+      background-color: bisque;
+      grid-row-end: span 10;
+    }
+
+    .medium {
+      background-color: burlywood;
+      grid-row-end: span 16;
+    }
+
+    .large {
+      background-color: blanchedalmond;
+      grid-row-end: span 20;
+    }
+
+    .flex{
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .avatar {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .avatar img {
+      width: 100%;
+      border-radius: 100%;
+      border: 1px solid orangered;
+    }
+
+    .flex p {
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="cards-container">
+      <div class="card small">
+        <div class="flex">
+          <div class="avatar"><img src="assets/juntao.avatar.png" alt="juntao avatar"></div>
+          <div class="brief">
+            <h4>Juntao Qiu</h4>
+            <p>Developer / Designer</p>
+          </div>
+        </div>
+      </div>
+      <div class="card medium"></div>
+      <div class="card large"></div>
+      <div class="card medium"></div>
+      <div class="card small"></div>
+      <div class="card medium"></div>
+      <div class="card large"></div>
+      <div class="card medium"></div>
+      <div class="card large"></div>
+      <div class="card medium"></div>
+      <div class="card small"></div>
+      <div class="card medium"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
