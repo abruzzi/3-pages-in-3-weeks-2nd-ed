@@ -1,169 +1,178 @@
+/* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global */
+
+:root {
+  --color-background: #EFEFF3;
+  --color-primary :#4A43EB;
+  --color-font: #1B1C23;
+  --color-font-secondary: #6B6A6C;
 }
 
 body {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #E9EBF2;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-background);
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 /* navigation */
 
 nav {
-    width: 800px;
-    margin: 0 auto;
-    /* background-color: beige; */
+  width: 800px;
+  margin: 0 auto;
 }
 
 .nav-list {
-    display: flex;
-    align-items: center;
-    padding: 16px 0;
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
 }
 
 .list-item:last-child {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .list-item:first-child {
-    margin-right: 60px;
+  margin-right: 60px;
 }
 
 .list-item a {
-    padding: 0 8px;
-    text-decoration: none;
-    color: black;
-    font-weight: lighter;
+  padding: 0 8px;
+  text-decoration: none;
+  color: var(--color-font);
+  font-weight: lighter;
 }
 
 .button-primary {
-    appearance: none;
-    border: 1px solid blue;
-    padding: 4px 16px;
-    border-radius: 16px;
+  appearance: none;
+  border: 1px solid var(--color-primary);
+  padding: 4px 16px;
+  border-radius: 16px;
 }
 
 .logo {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .highlight {
-    color: blue;
+  color: var(--color-primary);
 }
 
 /* hero */
 
 .hero-section {
-    width: 800px;
-    margin: 2rem auto;
-    display: flex;
-    align-items: center;
+  width: 800px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
 }
 
-.hero-section > section {
-    flex: 1;
+.hero-section>section {
+  flex: 1;
 }
 
 .game-cover {
-    width: 400px;
-    height: 260px;
-    border-radius: 1rem;
-    position: relative;
-    overflow: hidden;
+  width: 400px;
+  height: 260px;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .game-cover img {
-    position: absolute;
-    width: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 h1 {
-    font-size: 48px;
-    font-weight: bold;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .media .title {
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
 
-    color: white;
-    font-size: 14px;
-    font-weight: lighter;
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 .media span.rating {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 .brief p {
-    font-weight: lighter;
-    margin: 16px 0;
+  font-weight: lighter;
+  margin: 16px 0;
 }
 
 .button-secondary {
-    appearance: none;
-    padding: 8px 16px;
-    border-radius: 16px;
-    border: none;
-    background-color: blue;
-    color: white;
+  appearance: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
 }
 
 .latest-news {
-    width: 800px;
-    margin: 1rem auto;
+  width: 800px;
+  margin: 1rem auto;
 }
 
 .news-container {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .news {
-    flex: 1;
+  flex: 1;
 }
 
 .news img {
-    width: 100%;
-    border-radius: 1rem;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .news p {
-    font-size: 14px;
-    font-weight: lighter;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 h4 {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 /* control */
 .control {
-    margin: 3rem auto 0 auto;
-    width: 800px;
-    text-align: center;
-    font-size: 14px;
-    color: #AEAEB7;
+  margin: 3rem auto 0 auto;
+  width: 800px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-font-secondary);
 }
 
 .control button {
-    width: 2rem;
-    height: 2rem;
-    margin-top: 0.5rem;
-    border-radius: 100%;
-    border: 2px solid #AEAEB7;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  border-radius: 100%;
+  border: 2px solid var(--color-font-secondary);
 }
 
 button img {
-    width: 80%;
-    height: 80%;
-    margin-top: 0.3rem;
+  width: 80%;
+  height: 80%;
+  margin-top: 0.3rem;
 }
