@@ -15,10 +15,13 @@ body {
 li {
   list-style: none;
 }
+
 .container {
   width: 80vw;
   margin-inline: auto;
 }
+
+/* head */
 
 .nav-list {
   display: flex;
@@ -30,6 +33,24 @@ li {
 
 .menu-item {
   display: none;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+  .menu-item {
+    display: block;
+  }
+
+  .menu-item a {
+    text-decoration: none;
+    color: var(--color-primary);
+  }
 }
 
 .nav-list li:last-child {
@@ -58,6 +79,7 @@ li {
 .hero {
   margin: 1rem 0;
 }
+
 .hero h1 {
   font-weight: 400;
 }
@@ -67,6 +89,23 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 800px) {
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .categories {
+    margin-left: auto;
+  }
+
+  .buttons {
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
 }
 
 button {
@@ -104,8 +143,12 @@ button {
 }
 
 /* details */
-.details {
+
+.author {
   position: relative;
+}
+
+.details {
   padding: 2rem 10% 6rem 10%;
   background-color: var(--color-primary);
   color: white;
@@ -113,7 +156,7 @@ button {
 
 .details button {
   width: 100%;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .details h2 {
@@ -125,10 +168,6 @@ button {
 .details p {
   font-weight: 200;
   line-height: 1.5;
-}
-
-.details button {
-  margin: 2rem 0;
 }
 
 .info {
@@ -157,4 +196,20 @@ button {
 
 .image-container img {
   width: 100%;
+}
+
+@media (min-width: 800px) {
+  .details {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem 10%;
+  }
+
+  .details article {
+    flex: 1;
+  }
+
+  .image-container {
+    top: 10%;
+  }
 }
