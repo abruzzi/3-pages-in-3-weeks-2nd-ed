@@ -5,7 +5,11 @@
 }
 
 body {
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 .main {
@@ -80,10 +84,35 @@ li:nth-child(7) a {
   color: #FB776D;
 }
 
+/* posts */ 
 .posts-container {
   flex: 3 3 75%;
+  background-color: #FAFBFD;
 }
 
+.top-nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px dashed #eee;
+  background-color: white;
+}
+
+.top-nav-list li a {
+  color: black;
+}
+
+.top-nav-list input {
+  appearance: none;
+  border: none;
+  background-color: #F6F9FE;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+}
+
+/* profile */
 .profile-container {
   border-left: 1px dashed #eee;
   flex: 1 1 25%;

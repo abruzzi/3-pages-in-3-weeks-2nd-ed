@@ -63,6 +63,51 @@
       /* background-color: lightseagreen; */
     }
 
+    .cards {
+      width: 800px;
+      max-width: 80%;
+      margin: 4rem auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 8rem);
+      grid-auto-rows: 1rem;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .card {
+      text-align: center;
+      color: white;
+      background-color: orangered;
+      padding: 1rem;
+    }
+
+    .small {
+      grid-row-end: span 4;
+    }
+
+    .medium {
+      background-color: orange;
+      grid-row-end: span 5;
+    }
+
+    .large {
+      background-color: red;
+      grid-row-end: span 6;
+    }
+
+    /* .card:first-child {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .card:nth-child(4) {
+      grid-row-start: 2;
+      grid-row-end: 4;
+    } */
+
     /* .box:first-child {
       background-color: lightseagreen;
       flex-grow: 2;
@@ -78,28 +123,25 @@
 </head>
 
 <body>
-  <!-- <div class="container">
-    <h1>HTML and CSS are awesome</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At eum eius sequi dolor consectetur omnis quia
-      necessitatibus beatae vero numquam.</p>
-  </div> -->
+
 
   <!-- <div class="container">
-    <p>This</p>
-    <p>is</p>
-    <p>a</p>
-    <p>sentence.</p>
-    <span>This</span>
-    <span>is</span>
-    <span>another</span>
-    <span>one.</span>
-  </div> -->
-
-  <div class="container">
     <div class="box">one</div>
     <div class="box">two</div>
     <div class="box">three</div>
     <div class="box">four</div>
+  </div> -->
+
+  <div class="cards grid">
+    <div class="card small">Card 1</div>
+    <div class="card large">Card 2</div>
+    <div class="card medium">Card 3</div>
+    <div class="card small">Card 4</div>
+    <div class="card large">Card 5</div>
+    <div class="card small">Card 6</div>
+    <div class="card medium">Card 7</div>
+    <div class="card large">Card 8</div>
+    <div class="card small">Card 9</div>
   </div>
 </body>
 
