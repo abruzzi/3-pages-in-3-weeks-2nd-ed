@@ -6,7 +6,6 @@
 }
 
 /* global */
-
 :root {
   --color-background: #EFEFF3;
   --color-primary :#4A43EB;
@@ -17,17 +16,59 @@
 body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  background-color: var(--color-background);
+  /* background-color: var(--color-background); */
 }
 
 li {
   list-style: none;
 }
 
-/* navigation */
-
 nav {
-  width: 800px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.list-item:last-child {
+  margin-left: auto;
+}
+
+.list-item:first-child {
+  margin-right: 2rem;
+}
+
+.list-item a {
+  padding: 0 8px;
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+
+.button-primary {
+  appearance: none;
+  border: 1px solid blue;
+  padding: 4px 16px;
+  border-radius: 16px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.highlight {
+  color: blue;
+}
+
+/* navigation */
+/* 
+nav {
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -50,6 +91,7 @@ nav {
   text-decoration: none;
   color: var(--color-font);
   font-weight: lighter;
+  white-space: nowrap;
 }
 
 .button-primary {
@@ -67,10 +109,66 @@ nav {
   color: var(--color-primary);
 }
 
+*/
+
 /* hero */
 
 .hero-section {
-  width: 800px;
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section>section {
+  flex: 1;
+}
+
+.game-cover img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.brief p {
+  font-weight: lighter;
+  margin: 16px 0;
+}
+
+.button-secondary {
+  appearance: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  background-color: #4A43EB;
+  color: white;
+}
+
+.game-cover {
+  position: relative;
+}
+
+.media .title {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.media span.rating {
+  margin-left: 8px;
+}
+
+/*
+.hero-section {
+  width: 80%;
   margin: 2rem auto;
   display: flex;
   align-items: center;
@@ -93,11 +191,6 @@ nav {
   width: 100%;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-}
-
 .media .title {
   position: absolute;
   bottom: 16px;
@@ -110,6 +203,11 @@ h1 {
 
 .media span.rating {
   margin-left: 8px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .brief p {
@@ -126,8 +224,12 @@ h1 {
   color: white;
 }
 
+*/
+
+/* latest news */
+
 .latest-news {
-  width: 800px;
+  width: 80%;
   margin: 1rem auto;
 }
 
@@ -154,6 +256,34 @@ h4 {
   margin: 1rem 0;
 }
 
+/* .latest-news {
+  width: 800px;
+  margin: 1rem auto;
+}
+
+.news-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.news {
+  flex: 1;
+}
+
+.news img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.news p {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+h4 {
+  margin: 1rem 0;
+} */
+
 /* control */
 .control {
   margin: 3rem auto 0 auto;
@@ -168,11 +298,10 @@ h4 {
   height: 2rem;
   margin-top: 0.5rem;
   border-radius: 100%;
-  border: 2px solid var(--color-font-secondary);
+  border: 1px solid var(--color-font-secondary);
 }
 
 button img {
-  width: 80%;
-  height: 80%;
-  margin-top: 0.3rem;
+  width: 100%;
+  margin-top: 0.1rem;
 }

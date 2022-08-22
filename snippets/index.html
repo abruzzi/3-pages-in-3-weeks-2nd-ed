@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML + CSS 101</title>
+  <link rel="stylesheet" href="style.2.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .container {
+      width: 400px;
+      height: 100vh;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .box {
+      text-align: center;
+      background-color: orangered;
+      color: white;
+      padding: 0.5rem 1rem;
+    }
+
+    .box {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 50%;
+    }
+
+    .box:nth-child(1) {
+      /* background-color: lightseagreen; */
+    }
+
+    .box:nth-child(2) {
+      background-color: lightseagreen;
+      flex-shrink: 2;
+    }
+
+    .box:nth-child(3) {
+      background-color: lightseagreen;
+      flex-shrink: 2;
+    }
+
+    .box:nth-child(4) {
+      /* background-color: lightseagreen; */
+    }
+
+    /* .box:first-child {
+      background-color: lightseagreen;
+      flex-grow: 2;
+      flex-shrink: 2;
+    }
+
+    .box:last-child {
+      background-color: lightseagreen;
+      flex-grow: 2;
+      flex-shrink: 2;
+    } */
+  </style>
+</head>
+
+<body>
+  <!-- <div class="container">
+    <h1>HTML and CSS are awesome</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At eum eius sequi dolor consectetur omnis quia
+      necessitatibus beatae vero numquam.</p>
+  </div> -->
+
+  <!-- <div class="container">
+    <p>This</p>
+    <p>is</p>
+    <p>a</p>
+    <p>sentence.</p>
+    <span>This</span>
+    <span>is</span>
+    <span>another</span>
+    <span>one.</span>
+  </div> -->
+
+  <div class="container">
+    <div class="box">one</div>
+    <div class="box">two</div>
+    <div class="box">three</div>
+    <div class="box">four</div>
+  </div>
+</body>
+
+</html>
