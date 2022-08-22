@@ -20,7 +20,7 @@ body {
 }
 
 .nav-container {
-  border-right: 1px dashed red;
+  border-right: 1px dashed #eee;
   flex: 0 0 2rem;
 }
 
@@ -47,21 +47,44 @@ nav, .nav-list {
   margin: 0 0.5rem 0.5rem 0.5rem;
 }
 
-li img {
-  width: 100%;
-}
-
-/* .nav-list li a {
+li a {
   text-decoration: none;
   color: black;
-  display: inline-block;
-} */
+}
+
+li:nth-child(1) a {
+  color: #E6254A;
+}
+
+li:nth-child(2) a {
+  color: #25CCF1;
+}
+
+li:nth-child(3) a {
+  color: #EEC310;
+}
+
+li:nth-child(4) a {
+  color: #FC3934;
+}
+
+li:nth-child(5) a {
+  color: #312DFB;
+}
+
+li:nth-child(6) a {
+  color: #FF9A37;
+}
+
+li:nth-child(7) a {
+  color: #FB776D;
+}
 
 .posts-container {
   flex: 3 3 75%;
 }
 
 .profile-container {
-  border-left: 1px dashed red;
+  border-left: 1px dashed #eee;
   flex: 1 1 25%;
 }
