@@ -184,7 +184,7 @@
     width: 100%;
   }
 
-  /*
+  /*controls*/
   .controls {
     padding: 0 1rem;
   }
@@ -196,6 +196,10 @@
 
   .controls span:last-child {
     margin-left: auto;
+  }
+
+  span.active {
+    color: #E6254A;
   }
 
   .liked {
@@ -217,7 +221,6 @@
     color: lightgray;
     font-size: 10px;
   }
-  */
 
   .small .media {
     max-height: 124px;
