@@ -24,10 +24,9 @@
   }
   
   .nav-container {
-    border-right: 1px dashed #eee;
     flex: 0 0 2rem;
   }
-  
+
   nav, .nav-list {
     height: 100%;
   }
@@ -97,7 +96,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
-    border-bottom: 1px dashed #eee;
+    box-shadow: 4px 4px 16px #efefef;
     background-color: white;
   }
   
@@ -127,6 +126,7 @@
     padding: 1rem 0;
     border-radius: 0.5rem;
     background-color: white;
+    box-shadow: 4px 4px 16px #efefef;
   }
   
   .small {

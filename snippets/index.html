@@ -20,128 +20,35 @@
     }
 
     .container {
-      width: 400px;
-      height: 100vh;
-      max-width: 80%;
-      margin: 0 auto;
+      width: 600px;
+      margin: 1rem auto; 
     }
 
-    .container {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .box {
+    .container h1 {
       text-align: center;
-      background-color: orangered;
-      color: white;
+    }
+
+    .container p {
+      margin: 1rem 0;
+      font-weight: normal;
+    }
+
+    button {
       padding: 0.5rem 1rem;
-    }
-
-    .box {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 50%;
-    }
-
-    .box:nth-child(1) {
-      /* background-color: lightseagreen; */
-    }
-
-    .box:nth-child(2) {
-      background-color: lightseagreen;
-      flex-shrink: 2;
-    }
-
-    .box:nth-child(3) {
-      background-color: lightseagreen;
-      flex-shrink: 2;
-    }
-
-    .box:nth-child(4) {
-      /* background-color: lightseagreen; */
-    }
-
-    .cards {
-      width: 800px;
-      max-width: 80%;
-      margin: 4rem auto;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 8rem);
-      grid-auto-rows: 1rem;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    .card {
-      text-align: center;
-      color: white;
       background-color: orangered;
-      padding: 1rem;
+      color: white;
+      font-weight: bold;
+      border: 2px solid aquamarine;
+      border-radius: 2rem;
     }
-
-    .small {
-      grid-row-end: span 4;
-    }
-
-    .medium {
-      background-color: orange;
-      grid-row-end: span 5;
-    }
-
-    .large {
-      background-color: red;
-      grid-row-end: span 6;
-    }
-
-    /* .card:first-child {
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-
-    .card:nth-child(4) {
-      grid-row-start: 2;
-      grid-row-end: 4;
-    } */
-
-    /* .box:first-child {
-      background-color: lightseagreen;
-      flex-grow: 2;
-      flex-shrink: 2;
-    }
-
-    .box:last-child {
-      background-color: lightseagreen;
-      flex-grow: 2;
-      flex-shrink: 2;
-    } */
   </style>
 </head>
 
 <body>
-
-
-  <!-- <div class="container">
-    <div class="box">one</div>
-    <div class="box">two</div>
-    <div class="box">three</div>
-    <div class="box">four</div>
-  </div> -->
-
-  <div class="cards grid">
-    <div class="card small">Card 1</div>
-    <div class="card large">Card 2</div>
-    <div class="card medium">Card 3</div>
-    <div class="card small">Card 4</div>
-    <div class="card large">Card 5</div>
-    <div class="card small">Card 6</div>
-    <div class="card medium">Card 7</div>
-    <div class="card large">Card 8</div>
-    <div class="card small">Card 9</div>
+  <div class="container">
+    <h1>3 Web Designs in 3 Weeks</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam doloremque nihil corrupti rerum asperiores dolores, non voluptate eaque libero neque. Eligendi, fugit exercitationem ipsa rerum vero laborum. Et, itaque odio.</p>
+    <button>Subscribe</button>
   </div>
 </body>
 
